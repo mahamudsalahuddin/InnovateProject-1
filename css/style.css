@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+
+ /* ##########################################################
+                            starrt nav
+############################################################## */
+nav{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.container{
+    width: 1407px;
+    margin: 0 auto;
+}
+.title h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff5538;
+    text-transform: capitalize;
+}
+.title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    text-transform: capitalize;
+    width: 449px;
+    line-height: 140%;
+    margin-top: 10px;
+}
+.box{
+    display: flex;  
+}
+nav .logo{
+    width: 20%;
+    height: 100px;
+}
+nav .nav-item{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-item ul{
+    display: flex;
+    column-gap: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav .nav-item ul li i{
+    margin-left: 14px;
+}
+nav .button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .button a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 18px;
+    border: 1px solid transparent;
+    transition: 0.5s; /*koto somoy niye change hobe */
+}
+nav .button a:hover{
+    background: transparent;
+    color: #ff5538;
+    border-color: #ff5538;
+}
+/* ##########################################################
+                                end nav
+######################################################### */
+
+
+/* ##########################################################
+                            start banner
+######################################################### */
+.banner{
+    background: url("../images/banner.png") no-repeat center;
+    padding: 300px 0;
+    position: relative;
+
+}
+.banner .round-shape{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ff5538;
+    border-radius: 50%;
+    position: absolute;
+    top: 89px;
+    left: 804px;
+    animation: rotate 5s infinite linear;
+}
+.banner .round-shape .inner-shape{
+    width: 30px;
+    height: 30px;
+    background: #ff5538;
+    border-radius: 50%;
+    position: absolute;
+    bottom:0;
+    left: 13px;
+
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.banner .dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #C087EE;
+    position: absolute;
+    left: 1137px;
+    top: 142px;
+    animation: topbottom 3s infinite linear alternate;
+}
+@keyframes topbottom{
+    from{
+        transform: translateY(-50px);
+    }to{
+        transform: translateY(0);
+    }
+}
+.banner .cross1{
+    color: #C087EE;
+    position: absolute;
+    left: 1444px;
+    top: 161px;
+    animation: rotate1 3s infinite linear;
+}
+@keyframes rotate1{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.banner .cross2{
+    color: #C087EE;
+    position: absolute;
+    left: 677px;
+    top: 277px;
+    animation: rotate2 3s infinite linear;
+}
+@keyframes rotate2{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.banner h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #293130;
+    width: 771px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+}
+.banner p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 547px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+.banner .button{
+    text-align: center;
+}
+.banner .button a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+     transition: 0.5s; /*koto somoy niye change hobe */
+}
+.banner .button a:hover{
+    background: transparent;
+    color: #ff5538;
+    border-color: #ff5538;
+}
+/* ##########################################################
+                                end banner
+######################################################### */
+
+
+
+/* ##########################################################
+                                 Service start
+######################################################### */
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.service .item{
+    width: 32%;
+    background: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 16px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 16px -8px rgba(0,0,0,1);
+    box-shadow: 1px 1px 16px -8px rgba(0,0,0,1);
+    padding: 30px 40px;
+    box-sizing: border-box; /*ata dile padding hobe but div boro korbena */
+}
+.service .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+.service .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+}
+ /* ##########################################################
+        Service end
+######################################################### */
+
+/* ##########################################################
+                                digitallife part start
+######################################################### */
+
+.digitallife .box{
+    display: flex;
+}
+.digitallife .left{
+    width: 50%;
+    height: 300px;
+    /* background: red; */
+}
+.digitallife .right{
+    width: 50%;
+    /* height: 300px; */
+    /* background: rgb(76, 14, 223); */
+    background-image: url(../images/digitallifeimage2.png);
+    background-position: right;
+    padding: 100px 185px;
+}
+.digitallife .right h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #293130;
+    width: 570px;
+    
+}
+.digitallife .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #293130;
+    width: 501px;
+    line-height: 200%;
+}
+.digitallife .right img {
+    position: absolute;
+    top: 1672px;
+    right: -93px;
+}
+/* ##########################################################
+                                digitallife part end
+######################################################### */
