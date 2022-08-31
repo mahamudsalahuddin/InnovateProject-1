@@ -277,11 +277,9 @@ nav .button a:hover{
 .digitallife .right{
     width: 50%;
     background-image: url("../images/digitalLeftImage.png");
-    /* background-position: right; */
     background-repeat: no-repeat;
     padding: 0 185px;
     padding: 100px;
-    /* position: relative; */
 }
 .digitallife .right img{
     position: relative;
@@ -336,6 +334,10 @@ nav .button a:hover{
     color: #ff5538;
     border-color: #ff5538;
 }
+/* ##########################################################
+                                digitallife part end
+######################################################### */
+
 
 
 /* ##########################################################
@@ -350,7 +352,7 @@ nav .button a:hover{
 }
 .work .container .box{
     position: relative;
-    top: -354px;
+    /* top: -354px; */
 }
 .box .title h2{
     width: 664px;
@@ -440,7 +442,146 @@ nav .button a:hover{
 ######################################################### */
 
 
+/* ##########################################################
+counting part start
+#########################################################  */
+.counting{
+    background: url(../images/counterBg.png) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    padding: 120px 0;
+    position: relative;
+    margin-top: 120px;
+}
+.counting .withBg{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.counting .box{
+    display: flex;
+}
+.counting .count{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.counting .count .item{
+    width: 47%;
+    background: white;
+    text-align: center;
+    padding: 74px 0;
+}
+.counting .count .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+.counting .count .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.counting .details{
+    width: 50%;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.counting .details h2{
+    width: 570px;
+}
+.counting .details p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    width: 524px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.counting .details button{
 
+}
+.counting .details button a{
+    background-color: transparent;
+    display: inline;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #FF5538;
+    border-radius: 18px;
+    color: #FF5538;
+    transition: .5s;
+}
+.counting .details button a:hover{
+    color: white;
+    background: #FF5538;
+    border-color: transparent;
+}
+/* ##########################################################
+counting part end
+######################################################### */
 
-
-
+/* ##########################################################
+                                global part start
+######################################################### */
+.global{
+    margin-top: 120px;
+}
+.global .title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.global .title h2{
+    width: 849px;
+    margin: 0 auto;
+}
+.global .box{
+    display: flexs;
+    justify-content: space-evenly;
+}
+/* ##########################################################
+                                global part end
+######################################################### */
+/* #########################################
+                                customer part start
+   ##################################################### */
+.customer{
+    background: url(../images/customerPartBg.png) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 120px;
+    padding: 139px 0;
+}
+.customer .box{
+    display: flex;
+}
+.customer .details{
+    width: 50%;
+}
+.customer .squareImgBox{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 60px;
+}
+.customer .details p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    margin: 60px 0;
+}
+.customer .details h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+.customer .imageBox{
+    width: 50%;
+    text-align: center;
+}
+/* ###################################################
+                                customer part end
+   ################################################## */
