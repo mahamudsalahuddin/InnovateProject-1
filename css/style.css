@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 a{
     text-decoration: none;
@@ -39,6 +40,7 @@ nav{
     width: 449px;
     line-height: 140%;
     margin-top: 10px;
+    margin-bottom: 60px;
 }
 .box{
     display: flex;  
@@ -265,16 +267,35 @@ nav .button a:hover{
 }
 .digitallife .left{
     width: 50%;
-    height: 300px;
-    /* background: red; */
+}
+.digitallife .left img{
+    position: relative;
+    right: -80px;
+    width: 98%;
+    top: 24px;
 }
 .digitallife .right{
     width: 50%;
-    /* height: 300px; */
-    /* background: rgb(76, 14, 223); */
-    background-image: url(../images/digitallifeimage2.png);
-    background-position: right;
-    padding: 100px 185px;
+    background-image: url("../images/digitalLeftImage.png");
+    /* background-position: right; */
+    background-repeat: no-repeat;
+    padding: 0 185px;
+    padding: 100px;
+    /* position: relative; */
+}
+.digitallife .right img{
+    position: relative;
+    animation: digitalanimation 3s infinite linear alternate;
+}
+@keyframes digitalanimation {
+    from{
+        top: -128px;
+        right: -882px;
+    }
+    to{
+        top: -304px;
+        right: -839px;
+    }
 }
 .digitallife .right h3{
     font-family: 'Poppins', sans-serif;
@@ -292,11 +313,134 @@ nav .button a:hover{
     width: 501px;
     line-height: 200%;
 }
-.digitallife .right img {
-    position: absolute;
-    top: 1672px;
-    right: -93px;
+
+.box .button{
+    /* text-align: center; */
+    margin-top: 48px;
 }
+.box .button a{
+    display: inline-block;
+    background: #ff5538;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 18px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.box .button a:hover{
+    background: transparent;
+    color: #ff5538;
+    border-color: #ff5538;
+}
+
+
 /* ##########################################################
-                                digitallife part end
+                                 work part start
 ######################################################### */
+.work{
+    margin-top: 120px;
+}
+.work .box{
+    display: flex;
+    justify-content: space-between;
+}
+.work .container .box{
+    position: relative;
+    top: -354px;
+}
+.box .title h2{
+    width: 664px;
+    margin-bottom: 60px;
+}
+.work .boxtext{
+    width: 80%;
+}
+.work .boxbutton{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.work .boxbutton a{
+    background-color: transparent;
+    display: inline;
+    padding: 14px 28px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #FF5538;
+    border-radius: 18px;
+    color: #FF5538;
+    transition: .5s;
+}
+.work .boxbutton a:hover{
+    color: white;
+    background: #FF5538;
+    border-color: transparent;
+}
+.work .small-item{
+    width: 40%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.work img{
+    width: 100%;
+    /* position: relative; */
+    height: 332px;
+}
+.work .text-box {
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	bottom: -121px;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.2);
+	padding: 30px;
+	box-sizing: border-box;
+	opacity: 0;
+    transition: 0.5s;
+}
+.work .small-item:hover .text-box{
+    opacity: 1;
+    bottom: 0;
+}
+.work .large-item:hover .text-box{
+    opacity: 1;
+    bottom: 0;
+}
+
+.work .text-box h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #29313D;
+}
+.work .text-box a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF5538;
+    display: inline;
+}
+.work .large-item{
+    width: 58%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* ##########################################################
+                                 work part end
+######################################################### */
+
+
+
+
+
+
