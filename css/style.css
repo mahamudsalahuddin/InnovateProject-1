@@ -268,11 +268,12 @@ nav .button a:hover{
 .digitallife .left{
     width: 50%;
 }
-.digitallife .left img{
-    position: relative;
-    right: -80px;
-    width: 98%;
-    top: 24px;
+.digitallife .left img {
+	position: relative;
+	right: -73px;
+	width: 98%;
+	top: 85px;
+    z-index: 1;
 }
 .digitallife .right{
     width: 50%;
@@ -280,19 +281,21 @@ nav .button a:hover{
     background-repeat: no-repeat;
     padding: 0 185px;
     padding: 100px;
+    box-sizing: border-box;
+    position: relative;
 }
 .digitallife .right img{
-    position: relative;
+    position: absolute;
     animation: digitalanimation 3s infinite linear alternate;
 }
 @keyframes digitalanimation {
     from{
-        top: -128px;
-        right: -882px;
+        right: -57px;
+        top: 198px;
     }
     to{
-        top: -304px;
-        right: -839px;
+        right: -115px;
+        top: 402px;
     }
 }
 .digitallife .right h3{
